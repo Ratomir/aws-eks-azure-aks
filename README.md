@@ -18,3 +18,7 @@
 | Node health monitoring   | [GitHub issue](https://github.com/aws/containers-roadmap/issues/928) [AWS](https://aws.amazon.com/premiumsupport/knowledge-center/eks-node-status-ready/)    | [Auto-repair](https://learn.microsoft.com/en-us/azure/aks/node-auto-repair)    |
 
 
+
+## Speed comparison
+Please, take a look of the :movie_camera: [video](https://www.youtube.com/watch?v=goZFUy4uHVg&t=859s&ab_channel=DevOpsToolkit) from the [DevOps Toolkit YouYube channel](https://www.youtube.com/c/DevOpsToolkit). In the video you can find comparison between four k8s providers, EKS, AKS, GKE and Linode. :relaxed: 
+
