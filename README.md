@@ -25,15 +25,12 @@ Please, take a look of the :movie_camera: [video](https://www.youtube.com/watch?
 ## Limits
 | Name      | Amazon EKS     | Azure AKS     | Notes |
 | :---         |     :---:      |          :---: | :---  |
+| Offical link | [EKS](https://docs.aws.amazon.com/eks/latest/userguide/service-quotas.html) <br /> [Fargate throttling quotas](https://docs.aws.amazon.com/AmazonECS/latest/userguide/throttling.html) | [AKS](https://learn.microsoft.com/en-us/azure/aks/quotas-skus-regions) | [Token bucket](https://en.wikipedia.org/wiki/Token_bucket) |
 | Max clusters | Per region 100| Per subscription 5000 | Adjustable |
 | Max node pools/groups| 30 | 100 | EKS uses node groups <br /> AKS uses node pools |
 | Max nodes per node pool/group | 450 | (per cluster) | |
 | Max nodes per cluster | :rocket: 13 500 :rocket: | Virtual Machine Availability Sets and Basic Load Balancer SKU 100 <br /> Virtual Machine Scale Sets and Standard Load Balancer SKU 1000 (across all node pools)| |
 | Max pods | | [Basic networking](https://learn.microsoft.com/en-us/azure/aks/concepts-network#kubenet-basic-networking) with Kubenet | |
-| | | | |
-| | | | |
-| | | | |
-| | | | |
 
 ## Max pods per node
 ### AKS
