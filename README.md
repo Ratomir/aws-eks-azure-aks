@@ -20,5 +20,38 @@
 
 
 ## Speed comparison
-Please, take a look of the :movie_camera: [video](https://www.youtube.com/watch?v=goZFUy4uHVg&t=859s&ab_channel=DevOpsToolkit) from the [DevOps Toolkit YouYube channel](https://www.youtube.com/c/DevOpsToolkit). In the video you can find comparison between four k8s providers, EKS, AKS, GKE and Linode. :relaxed: 
+Please, take a look of the :movie_camera: [video](https://www.youtube.com/watch?v=goZFUy4uHVg&t=859s&ab_channel=DevOpsToolkit) from the [DevOps Toolkit YouYube channel](https://www.youtube.com/c/DevOpsToolkit). In the video you can find comparison between four k8s providers, EKS, AKS, GKE and Linode. :relaxed:
 
+## Limits
+| Name      | Amazon EKS     | Azure AKS     | Notes |
+| :---         |     :---:      |          :---: | :---  |
+| Max clusters | Per region 100| Per subscription 5000 | Adjustable |
+| Max node pools/groups| 30 | 100 | EKS uses node groups <br /> AKS uses node pools |
+| Max nodes per node pool/group | 450 | (per cluster) | |
+| Max nodes per cluster | :rocket: 13 500 :rocket: | Virtual Machine Availability Sets and Basic Load Balancer SKU 100 <br /> Virtual Machine Scale Sets and Standard Load Balancer SKU 1000 (across all node pools)| |
+| Max pods | | [Basic networking](https://learn.microsoft.com/en-us/azure/aks/concepts-network#kubenet-basic-networking) with Kubenet | |
+| | | | |
+| | | | |
+| | | | |
+| | | | |
+
+## Max pods per node
+### AKS
+With [Basic networking](https://learn.microsoft.com/en-us/azure/aks/concepts-network#kubenet-basic-networking) with Kubenet 
+- Maximum: 250
+- Azure CLI default: 110
+- Azure Resource Manager template default: 110
+- Azure portal deployment default: 30
+
+Advanced networking with [Azure Container Networking Interface](https://learn.microsoft.com/en-us/azure/aks/concepts-network#azure-cni-advanced-networking)
+- Maximum: 250
+- Default: 30
+
+### EKS
+Depends of the EC2 instance size and Elastic Network Interfaces (ENI) of an image
+The formula
+```math
+N * (M-1) + 2
+```
+- N is the number of Elastic Network Interfaces (ENI) of the instance type
+- M is the number of IP addresses per ENI
