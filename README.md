@@ -52,3 +52,5 @@ N * (M-1) + 2
 ```
 - N is the number of Elastic Network Interfaces (ENI) of the instance type
 - M is the number of IP addresses per ENI
+
+All calculations from [AWS frequently updated](https://github.com/awslabs/amazon-eks-ami/blob/master/files/eni-max-pods.txt). 
