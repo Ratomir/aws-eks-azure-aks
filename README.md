@@ -53,4 +53,10 @@ N * (M-1) + 2
 - N is the number of Elastic Network Interfaces (ENI) of the instance type
 - M is the number of IP addresses per ENI
 
-All calculations from [AWS frequently updated](https://github.com/awslabs/amazon-eks-ami/blob/master/files/eni-max-pods.txt). 
+All calculations from [AWS frequently updated](https://github.com/awslabs/amazon-eks-ami/blob/master/files/eni-max-pods.txt).
+
+## Security
+| Name      | Amazon EKS     | Azure AKS     | Notes |
+| :---         |     :---:      |          :---: | :---  |
+| Network plugin/CNI | [VPC CNI](https://docs.aws.amazon.com/eks/latest/userguide/pod-networking.html) | [Azure CNI](https://learn.microsoft.com/en-us/azure/aks/configure-azure-cni) <br /> [Plugin GitHub](https://github.com/Azure/azure-container-networking) | - [EKS CNI Proposal](https://github.com/aws/amazon-vpc-cni-k8s/blob/master/docs/cni-proposal.md) <br /> [amazon-vpc-cni-k8s](https://github.com/aws/amazon-vpc-cni-k8s) |
+| RBAC | [IAM](https://docs.aws.amazon.com/eks/latest/userguide/add-user-role.html) aws-auth ConfigMap | [Azure Active Directory](https://learn.microsoft.com/en-us/azure/aks/azure-ad-rbac) <br /> [Roles](https://learn.microsoft.com/en-us/azure/aks/azure-ad-rbac#create-the-aks-cluster-resources-for-sres) :arrow_right: Permissions :arrow_right: [role bindings](https://learn.microsoft.com/en-us/azure/aks/azure-ad-rbac#create-the-aks-cluster-resources-for-sres)| [k8s Using RBAC Authorization](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#default-roles-and-role-bindings) |
