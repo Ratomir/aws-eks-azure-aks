@@ -70,3 +70,18 @@ All calculations from [AWS frequently updated](https://github.com/awslabs/amazon
 | Image formats | [Formats](https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-manifest-formats.html) | [Formats](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-image-formats) | |
 | Access | IAM <br /> [Repository level](https://docs.aws.amazon.com/AmazonECR/latest/userguide/security_iam_id-based-policy-examples.html) <br /> Public by default <br /> [VPC endpoint](https://docs.aws.amazon.com/AmazonECR/latest/userguide/vpc-endpoints.html) | RBAC <br /> [Repository level](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-repository-scoped-permissions) <br /> Public by default <br /> [VNET endpoint](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-vnet) | |
 | Supports immutable image tags | [Image tag mutability](https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-tag-mutability.html) | [Container image lock](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-image-lock) | |
+
+
+
+
+
+
+
+
+
+
+
+## Stack overflow Trends [link](https://insights.stackoverflow.com/trends?tags=amazon-eks%2Cazure-aks)
+![image](https://user-images.githubusercontent.com/8688494/191298183-67ce4490-73f7-4364-ad0b-fbc2e103f253.png)
+
+
