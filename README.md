@@ -28,7 +28,7 @@ Please, take a look of the :movie_camera: [video](https://www.youtube.com/watch?
 | Offical link | [EKS](https://docs.aws.amazon.com/eks/latest/userguide/service-quotas.html) <br /> [Fargate throttling quotas](https://docs.aws.amazon.com/AmazonECS/latest/userguide/throttling.html) | [AKS](https://learn.microsoft.com/en-us/azure/aks/quotas-skus-regions) | [Token bucket](https://en.wikipedia.org/wiki/Token_bucket) |
 | Max clusters | Per region 100| Per subscription 5000 | Adjustable |
 | Max node pools/groups| 30 | 100 | EKS uses node groups <br /> AKS uses node pools |
-| Max nodes per node pool/group | 450 | (per cluster) | |
+| Max nodes per node pool/group | 450 | 1000(per cluster) | |
 | Max nodes per cluster | :rocket: 13 500 :rocket: | Virtual Machine Availability Sets and Basic Load Balancer SKU 100 <br /> Virtual Machine Scale Sets and Standard Load Balancer SKU 1000 (across all node pools)| |
 
 ## Max pods per node
@@ -67,5 +67,6 @@ All calculations from [AWS frequently updated](https://github.com/awslabs/amazon
 ## Container Registry
 | Name      | Amazon ECR    | Azure ACR    | Notes |
 | :---         |     :---:      |          :---: | :---  |
-| Image formats | [Formats](https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-manifest-formats.html) | [Formats]([url](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-image-formats)) | |
+| Image formats | [Formats](https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-manifest-formats.html) | [Formats](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-image-formats) | |
 | Access | IAM <br /> [Repository level](https://docs.aws.amazon.com/AmazonECR/latest/userguide/security_iam_id-based-policy-examples.html) <br /> Public by default <br /> [VPC endpoint](https://docs.aws.amazon.com/AmazonECR/latest/userguide/vpc-endpoints.html) | RBAC <br /> [Repository level](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-repository-scoped-permissions) <br /> Public by default <br /> [VNET endpoint](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-vnet) | |
+| Supports immutable image tags | [Image tag mutability](https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-tag-mutability.html) | [Container image lock](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-image-lock) | |
