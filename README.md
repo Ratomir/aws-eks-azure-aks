@@ -108,3 +108,7 @@ At the moment, there is no better blog, test, or whatever on the Internet about 
 I believe that AKS has better integration with developer tools, at first with Visual Studio Code and Visual Studio. Yes, they are Microsoft's tools and it is something expected. You can deploy a container to a cluster from IDE.
 From oposite side, it is not something that AWS doesn't want in the eco-system but it's not primary focus.
 Still, it is maintainable at the both cases, anyway you should use CI/CD concept and tools.
+
+## EKS vs AKS, architecture design, side-by-side
+![image](https://user-images.githubusercontent.com/8688494/191535226-77a014f4-983b-4aa8-b1ae-a331cc4b07ce.png)
+
