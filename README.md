@@ -110,5 +110,6 @@ From oposite side, it is not something that AWS doesn't want in the eco-system b
 Still, it is maintainable at the both cases, anyway you should use CI/CD concept and tools.
 
 ## EKS vs AKS, architecture design, side-by-side
-![image](https://user-images.githubusercontent.com/8688494/191535226-77a014f4-983b-4aa8-b1ae-a331cc4b07ce.png)
+![image](https://user-images.githubusercontent.com/8688494/191537957-01567773-aef8-4897-90f3-57beaa94ab62.png)
+
 
