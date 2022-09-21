@@ -6,6 +6,7 @@
 | [CNCF Kubernetes Conformance](https://www.cncf.io/certification/software-conformance/)     | :heavy_check_mark:       | :heavy_check_mark:      |
 | Runs on | Public <br /> [In government](https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-eks.html) | Public <br /> [In government](https://azure.microsoft.com/en-us/explore/global-infrastructure/government/) |
 | Compliant |  HIPAA, ISO, PCI DSS, and SOC |  HIPAA, ISO, PCI DSS, and SOC |
+| Newer Kubernetes version | :steam_locomotive: | Is faster :bullettrain_side: |
 | Automatically <br />control-plane upgrade process   | :x:     | :x: <br /> [In development](https://azure.microsoft.com/en-us/updates/aks-cluster-auto-upgrade/) <br />  [Offical doc](https://learn.microsoft.com/en-us/azure/aks/auto-upgrade-cluster)   |
 | Manually <br />control-plane upgrade process   | [Update](https://docs.aws.amazon.com/eks/latest/userguide/update-cluster.html)  <br /> kube-proxy, coredns, AWS VPC CNI   | [Update](https://learn.microsoft.com/en-us/azure/aks/upgrade-cluster?tabs=azure-cli)  <br /> quota limits  |
 | Node upgrade process   | Drain and replace nodes     | Drain and replace nodes    |
@@ -81,9 +82,29 @@ All calculations from [AWS frequently updated](https://github.com/awslabs/amazon
 ![image](https://user-images.githubusercontent.com/8688494/191298183-67ce4490-73f7-4364-ad0b-fbc2e103f253.png)
 
 ## Azure Kubernetes useful links
+- [AKS Construction helper](https://azure.github.io/AKS-Construction/)
 - [AKS changelog](https://github.com/Azure/AKS/blob/master/CHANGELOG.md)
 - [Release stuts](https://releases.aks.azure.com/webpage/index.html#tabeuro)
 - [AKS Azure policy reference](https://learn.microsoft.com/en-us/azure/aks/policy-reference)
 - [Image cleaner](https://learn.microsoft.com/en-us/azure/aks/image-cleaner?tabs=azure-cli)
 - [Threat matrix for Kubernetes](https://www.microsoft.com/security/blog/2021/03/23/secure-containerized-environments-with-updated-threat-matrix-for-kubernetes/)
+- [https://azure.microsoft.com/en-us/pricing/vm-selector/](https://azure.microsoft.com/en-us/pricing/vm-selector/)
 
+## EKS useful links
+- [EKS best practices](https://github.com/aws/aws-eks-best-practices)
+- [EKS workshop](https://www.eksworkshop.com/)
+
+## Storage IO Performance
+Really good blog about storage performance with Azure Kubernetes Cluster, File Storage and Disk, but probably the same concpet may be applied on the EKS. Take a shoot https://www.feval.ca/posts/k8s-io/.
+
+## AKS VM Banchmarks
+- [Linux VM Banchmark](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/compute-benchmark-scores)
+- [Windows VM Banchmark](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/compute-benchmark-scores)
+
+## EKS Scalling Containers on AWS
+At the moment, there is no better blog, test, or whatever on the Internet about containers and scale performance then https://www.vladionescu.me/. You need :four::five: minutes to walk trought the post. https://www.vladionescu.me/posts/scaling-containers-on-aws-in-2022/ Enjoy! 
+
+### Developer integration
+I believe that AKS has better integration with developer tools, at first with Visual Studio Code and Visual Studio. Yes, they are Microsoft's tools and it is something expected. You can deploy a container to a cluster from IDE.
+From oposite side, it is not something that AWS doesn't want in the eco-system but it's not primary focus.
+Still, it is maintainable at the both cases, anyway you should use CI/CD concept and tools.
