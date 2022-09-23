@@ -88,11 +88,14 @@ All calculations from [AWS frequently updated](https://github.com/awslabs/amazon
 - [AKS Azure policy reference](https://learn.microsoft.com/en-us/azure/aks/policy-reference)
 - [Image cleaner](https://learn.microsoft.com/en-us/azure/aks/image-cleaner?tabs=azure-cli)
 - [Threat matrix for Kubernetes](https://www.microsoft.com/security/blog/2021/03/23/secure-containerized-environments-with-updated-threat-matrix-for-kubernetes/)
-- [https://azure.microsoft.com/en-us/pricing/vm-selector/](https://azure.microsoft.com/en-us/pricing/vm-selector/)
+- [VM selector tool](https://azure.microsoft.com/en-us/pricing/vm-selector/)
+- [Instance calculator](https://learnk8s.io/kubernetes-instance-calculator)
 
 ## EKS useful links
 - [EKS best practices](https://github.com/aws/aws-eks-best-practices)
 - [EKS workshop](https://www.eksworkshop.com/)
+- [Instance calculator](https://learnk8s.io/kubernetes-instance-calculator)
+
 
 ## Storage IO Performance
 Really good blog about storage performance with Azure Kubernetes Cluster, File Storage and Disk, but probably the same concpet may be applied on the EKS. Take a shoot https://www.feval.ca/posts/k8s-io/.
