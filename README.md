@@ -91,6 +91,9 @@ All calculations from [AWS frequently updated](https://github.com/awslabs/amazon
 - [VM selector tool](https://azure.microsoft.com/en-us/pricing/vm-selector/)
 - [Instance calculator](https://learnk8s.io/kubernetes-instance-calculator)
 
+### AKS for EKS proffesionals
+Amazing series of blogs for EKS proffesionals https://learn.microsoft.com/en-us/azure/architecture/aws-professional/eks-to-aks/
+
 ## EKS useful links
 - [EKS best practices](https://github.com/aws/aws-eks-best-practices)
 - [EKS workshop](https://www.eksworkshop.com/)
