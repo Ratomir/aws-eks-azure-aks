@@ -1,4 +1,4 @@
-# init2022
+# AWS EKS, Azure AKS
 
 | Feature      | Amazon EKS     | Azure AKS     |
 | :---         |     :---:      |          :---: |
