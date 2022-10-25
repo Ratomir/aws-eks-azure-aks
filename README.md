@@ -1,5 +1,6 @@
 
 ## Table of contents
+- [Global features](#global-features)
 - [Speed comparison](#speed-comparison)
 - [Limits](#limits)
 - [Max pods per node](#max-pods-per-node)
